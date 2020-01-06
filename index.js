@@ -25,9 +25,6 @@ const k_muppet = {
   k_partner: "Miss Piggy"
 };
 
-function test() {
-  console.log(black);
-}
 // Strings
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
@@ -41,20 +38,23 @@ const [Bessie, Dolly, Babe, Little] = farmAnimals
   });
 
 // 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of black_and_white, black, and pink.
-const [black_and_white, black, pink] = farmAnimals
-  .split(" ")
-  .filter(function(animal) {
-    return animal != "horse" || animal != "chicken";
-  });
+const [black_and_white, black, pink] = "cow sheep pig".split(" ");
 
 // Arrays
 
 // 4. Use destructuring to assign appropriate variables using the color names.
-
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
 // 5. Some people have a really hard time picking out indigo, so let's leave that one out, using the first letter of each color as the variable names.
-
+const [r, o, y, g, b, v] = [
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "violet"
+];
 // 6. But wait! Indigo is now feeling *super* left out. Let's only assign indigo using indg.
-
+const indg = "indigo";
 // Objects
 
 // 7. Use destructuring to assign all appropriate variables using the keys as the variable names
