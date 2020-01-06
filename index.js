@@ -25,18 +25,27 @@ const k_muppet = {
   k_partner: "Miss Piggy"
 };
 
-const [moo, nay, bah, oink, cluck] = farmAnimals.split(" ");
-
 function test() {
-  console.log(moo);
+  console.log(black);
 }
 // Strings
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(" ");
 
 // 2. Bolt the horse wandered off, so just give us four animals, and let's name them Bessie, Dolly, Babe, and Little.
+const [Bessie, Dolly, Babe, Little] = farmAnimals
+  .split(" ")
+  .filter(function(animal) {
+    return animal != "horse";
+  });
 
 // 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of black_and_white, black, and pink.
+const [black_and_white, black, pink] = farmAnimals
+  .split(" ")
+  .filter(function(animal) {
+    return animal != "horse" || animal != "chicken";
+  });
 
 // Arrays
 
