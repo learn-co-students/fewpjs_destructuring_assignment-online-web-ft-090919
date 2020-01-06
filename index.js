@@ -26,8 +26,9 @@ const k_muppet = {
 };
 
 const [moo, nay, bah, oink, cluck] = farmAnimals.split(" ");
+
 function test() {
-  console.log(bah);
+  console.log(moo);
 }
 // Strings
 
